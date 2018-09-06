@@ -10,4 +10,4 @@ make build
 The image short-name will be: ``docker-shibboleth-sp``
 
 To use the image:
-See example in [BibRP/docker-compose.yml](https://github.com/BibCnrs/BibRP/blob/master/docker-compose.yml)
+See example in [InsRP/docker-compose.yml](https://github.com/InsermBiblio/InsRP/blob/master/docker-compose.yml)
