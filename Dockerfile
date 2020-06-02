@@ -1,10 +1,10 @@
-FROM debian:jessie
+FROM debian:buster
 
 RUN apt-get update \
-  && apt-get -y install apache2 libapache2-mod-shib2 \
+  && apt-get -y install apache2=2.4.38-3+deb10u3 libapache2-mod-shib2=3.0.4+dfsg1-1 \
   && apt-get clean
 
-RUN a2enmod ssl shib2 proxy_http
+RUN a2enmod ssl shib proxy_http
 RUN a2dissite 000-default
 RUN a2ensite default-ssl
 
